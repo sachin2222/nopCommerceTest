@@ -15,10 +15,13 @@ def setup(request):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("--incognito")
-        driver = webdriver.Chrome(executable_path='C:\sachin\chromeWebdriver89\chromedriver_win32\chromedriver.exe',
-                                  options=chrome_options)
+        driver = webdriver.Chrome(
+            executable_path="../Drivers/chromedriver.exe",
+            options=chrome_options)
+
     elif browser_name == "firefox":
-        driver = webdriver.Firefox(executable_path="C:\sachin\geckodriver-v0.28.0-win64\geckodriver.exe")
+        driver = webdriver.Firefox(executable_path="../Drivers/geckodriver.exe")
+        driver.maximize_window()
 
     driver.implicitly_wait(10)
     driver.get("https://www.myntra.com/")

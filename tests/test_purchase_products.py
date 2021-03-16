@@ -1,8 +1,4 @@
-import time
-
-import pytest
 from selenium.webdriver import ActionChains
-
 from Utils.BaseFile import BaseClass
 
 

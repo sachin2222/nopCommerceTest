@@ -27,4 +27,4 @@ def setup(request):
     driver.get("https://www.myntra.com/")
     request.cls.driver = driver
     yield
-    driver.quit()
+

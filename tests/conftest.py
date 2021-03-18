@@ -8,6 +8,9 @@ def pytest_addoption(parser):
     )
 
 
+
+
+
 @pytest.fixture(scope="class")
 def setup(request):
     browser_name = request.config.getoption("browser_name")
@@ -24,7 +27,5 @@ def setup(request):
         driver.maximize_window()
 
     driver.implicitly_wait(10)
-    driver.get("https://www.myntra.com/")
     request.cls.driver = driver
     yield
-

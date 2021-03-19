@@ -1,43 +1,39 @@
 import pytest
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common import keys
-from selenium.webdriver.common.keys import Keys
-
 from PageObjects.TshirtPage import TshirtPageObjects
+from Testdata.TshirtData import TshirtData
 from Utils.BaseFile import BaseClass
 from PageObjects.HomePage import HomepageObjects
 
 
 class TestPurchase(BaseClass):
 
-    def test_Navigate_Tshirt_Category(self):
+    def test_tshirt_X_filter_Select_Y(self, Filter_Info):
+        log = self.get_Logger("t-shirt_purchase_functionality.log")
         self.driver.get("https://www.myntra.com/")
+
+        log.info("Invoking Web Browser")
         homepage = HomepageObjects(self.driver)
         actions = ActionChains(self.driver)
-        actions.move_to_element(homepage.Men_link()).click()
+        actions.move_to_element(homepage.Men_link()).perform()
+        log.info("Move to Men Category")
+
         homepage.Tshirt_link().click()
-        self.driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'w')
+        log.info("Click on Tshirt Link Under Men category")
 
-
-
-    def test_tshirt_SIZE_filter_Select_L(self, Filter_Info):
         tshirtpage = TshirtPageObjects(self.driver)
         filters = tshirtpage.get_top_filters()
-        for filter in filters:
-            print(filter.text)
-            if filter.text == Filter_Info[0]:
-                filter.click()
-                break
+        log.info("Got all the top Filters")
+
+        self.click_element_by_getText(filters, Filter_Info["Filter_Name"], log)
+        log.info("Selected the Required Filter by name")
 
         checkbox_list = tshirtpage.checkBox_list()
-        print(len(checkbox_list))
+        self.click_checkbox_by_getAtrribute(checkbox_list, Filter_Info["Filter_Value"], log)
+        log.info("Selected the Required CheckBox Button to Filter")
 
-        for checkBox in checkbox_list:
-            print(checkBox.get_attribute("value"))
-            if checkBox.get_attribute("value") == Filter_Info[1]:
-                checkBox.find_element_by_xpath(".//following-sibling::div").click()
-                break
 
-    @pytest.fixture(params=[("Size", "L"), ("Country of Origin", "India"), ("Bundles", "Bundles")])
+    @pytest.fixture(
+        params=TshirtData.tshirt_Filter_values)
     def Filter_Info(self, request):
         return request.param

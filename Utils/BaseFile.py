@@ -4,7 +4,7 @@ import logging
 import pytest
 
 
-@pytest.mark.usefixtures("setup", "Filter_Info")
+@pytest.mark.usefixtures("setup")
 class BaseClass:
 
     def click_element_by_getText(self, values, textvalue, log):

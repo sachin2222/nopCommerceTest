@@ -26,6 +26,7 @@ def setup(request):
         driver = webdriver.Firefox(executable_path="../Drivers/geckodriver.exe")
         driver.maximize_window()
 
+    driver.get("https://admin-demo.nopcommerce.com/")
     driver.implicitly_wait(10)
     request.cls.driver = driver
     yield
@@ -55,4 +56,5 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-    driver.get_screenshot_as_file(name)
+    file_path = "../Reports/"
+    driver.get_screenshot_as_file(file_path + name)

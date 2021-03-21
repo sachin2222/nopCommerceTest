@@ -23,7 +23,6 @@ class BaseClass:
                 value.find_element_by_xpath(".//following-sibling::div").click()
                 break
 
-
     def get_Logger(self, logFilePath):
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)

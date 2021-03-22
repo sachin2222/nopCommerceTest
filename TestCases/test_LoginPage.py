@@ -10,7 +10,6 @@ class TestLoginPage(BaseClass):
     def test_valid_user_credentials(self, valid_login_Data):
         log = self.get_Logger("../Logs/loginUser.log")
         log.info("Navigated to the Base URL:" + self.driver.current_url)
-
         login = LoginPage(self.driver)
         login.setEmail(valid_login_Data["email"])
         log.info("user has entered email: " + valid_login_Data["email"])
@@ -50,7 +49,6 @@ class TestLoginPage(BaseClass):
         error_msg = login.get_Error_Message()
         assert "Login was unsuccessful" in error_msg
         log.info("Login was Unsuccessful")
-
         log.info("*************Test Case Passed**************")
 
     @pytest.fixture(params=LoginUserData.ValidLoginCredentials)

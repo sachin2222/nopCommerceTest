@@ -28,9 +28,10 @@ def setup(request):
         driver.maximize_window()
 
     driver.get("https://admin-demo.nopcommerce.com/")
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     request.cls.driver = driver
     yield
+
 
 
 @pytest.mark.hookwrapper

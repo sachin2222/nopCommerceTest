@@ -6,6 +6,7 @@ from Utils.BaseFile import BaseClass
 
 
 class TestLoginPage(BaseClass):
+    @pytest.mark.addcustomer
     @pytest.mark.validuser
     def test_valid_user_credentials(self, valid_login_Data):
         log = self.get_Logger("../Logs/loginUser.log")

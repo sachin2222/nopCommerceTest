@@ -1,1 +1,79 @@
-
+2021-03-25 14:18:15,477 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:18:15,645 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:18:15,772 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:18:30,348 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:18:30,371 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:18:30,372 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:28:31,560 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:28:31,723 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:28:31,866 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:28:37,890 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:28:37,896 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:28:37,896 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:29:47,997 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:29:48,157 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:29:48,294 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:29:54,022 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:29:54,083 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:29:54,083 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:34:46,537 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:34:46,697 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:34:46,846 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:34:53,739 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:34:53,745 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:34:53,745 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:36:55,098 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:36:55,252 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:36:55,389 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:37:00,876 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:37:00,884 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:37:00,884 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:38:00,096 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:38:00,255 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:38:00,388 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:38:07,012 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:38:07,019 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:38:07,020 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 14:53:21,695 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 14:53:21,899 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 14:53:22,130 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 14:53:29,041 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 14:53:29,071 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 14:53:29,072 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 15:00:14,896 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 15:00:15,035 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 15:00:15,160 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 15:00:22,525 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 15:00:22,532 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 15:00:22,533 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-25 15:01:22,027 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-25 15:01:22,175 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-25 15:01:22,320 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-25 15:01:31,970 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-25 15:01:32,012 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-25 15:01:32,013 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-26 14:03:59,916 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-26 14:04:00,137 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-26 14:04:00,313 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-26 14:04:10,148 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-26 14:04:10,215 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-26 14:04:10,216 :INFO : test_valid_user_credentials :*******************Test Case Passed**********
+2021-03-26 14:05:52,942 :INFO : test_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-26 14:05:53,101 :INFO : test_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-26 14:05:53,232 :INFO : test_valid_user_credentials :user has entered password: admin
+2021-03-26 14:06:01,220 :INFO : test_valid_user_credentials :User Clicks On Submit Button
+2021-03-26 14:06:01,282 :INFO : test_valid_user_credentials :*************Login ! Successful**************
+2021-03-26 14:06:04,689 :INFO : test_valid_user_credentials :***********Logout! Successful*********************
+2021-03-26 14:06:04,698 :INFO : test_valid_user_credentials :****************Test Case Passed**************
+2021-03-26 14:13:36,404 :INFO : test_login_with_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-26 14:13:36,580 :INFO : test_login_with_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-26 14:13:36,730 :INFO : test_login_with_valid_user_credentials :user has entered password: admin
+2021-03-26 14:13:44,168 :INFO : test_login_with_valid_user_credentials :User Clicks On Submit Button
+2021-03-26 14:13:44,175 :INFO : test_login_with_valid_user_credentials :*************Login ! Successful**************
+2021-03-26 14:13:48,369 :INFO : test_login_with_valid_user_credentials :***********Logout! Successful*********************
+2021-03-26 14:13:48,376 :INFO : test_login_with_valid_user_credentials :****************Test Case Passed**************
+2021-03-26 14:21:41,607 :INFO : test_login_with_valid_user_credentials :Navigated to the Base URL:https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+2021-03-26 14:21:41,804 :INFO : test_login_with_valid_user_credentials :user has entered email: admin@yourstore.com
+2021-03-26 14:21:41,978 :INFO : test_login_with_valid_user_credentials :user has entered password: admin
+2021-03-26 14:21:49,101 :INFO : test_login_with_valid_user_credentials :User Clicks On Submit Button
+2021-03-26 14:21:49,109 :INFO : test_login_with_valid_user_credentials :*************Login ! Successful**************

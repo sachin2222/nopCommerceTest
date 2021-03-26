@@ -4,11 +4,16 @@ from PageObjects.LoginPage import LoginPage
 from Testdata.LoginUserData import LoginUserData
 from Utils.BaseFile import BaseClass
 
+login = None
+log = None
 
-class TestLoginPage(BaseClass):
-    @pytest.mark.addcustomer
+
+class TestLoginUser(BaseClass):
+
     @pytest.mark.validuser
-    def test_valid_user_credentials(self, valid_login_Data):
+    def test_login_with_valid_user_credentials(self, valid_login_Data):
+        global login
+        global log
         log = self.get_Logger("../Logs/loginUser.log")
         log.info("Navigated to the Base URL:" + self.driver.current_url)
         login = LoginPage(self.driver)
@@ -25,6 +30,7 @@ class TestLoginPage(BaseClass):
         assert dashboard_url == self.driver.current_url
         log.info("*************Login ! Successful**************")
 
+    def test_logout(self):
         login.click_on_logout()
         log.info("***********Logout! Successful*********************")
         url = "https://admin-demo.nopcommerce.com/"
@@ -32,8 +38,8 @@ class TestLoginPage(BaseClass):
         assert url in self.driver.current_url
         log.info("****************Test Case Passed**************")
 
-    @pytest.mark.invaliduser
-    def test_invalid_user_credentials(self, invalid_login_Data):
+    @pytest.mark.skip
+    def test_login_with_invalid_user_credentials(self, invalid_login_Data):
         log = self.get_Logger("../Logs/loginUser.log")
         log.info("Navigated to the Base URL:" + self.driver.current_url)
 

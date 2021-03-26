@@ -1,0 +1,6 @@
+2021-03-25 15:00:25,725 :INFO : test_search_customer :Length of this List:,3
+2021-03-25 15:01:35,338 :INFO : test_search_customer :Length of this List:,3
+2021-03-26 14:04:14,956 :INFO : test_search_customer :Length of this List:,1
+2021-03-26 14:04:14,990 :INFO : test_search_customer :*******************Test Case Passed**********
+2021-03-26 14:58:23,191 :INFO : test_search_customer_by_email :Length of this List:,1
+2021-03-26 14:58:23,221 :INFO : test_search_customer_by_email :*******************Test Case Passed**********

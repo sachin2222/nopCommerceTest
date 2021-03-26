@@ -4,7 +4,7 @@ import logging
 import pytest
 
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("setup", "login")
 class BaseClass:
 
     def click_element_by_getText(self, values, textvalue, log):
@@ -15,13 +15,13 @@ class BaseClass:
                 value.click()
                 break
 
-    def click_checkbox_by_getAtrribute(self, values, attributeValue, log):
-        log.info("{},{}".format("Length of this List:", len(values)))
-        for value in values:
-            log.info(value.get_attribute("value"))
-            if value.get_attribute("value") == attributeValue:
-                value.find_element_by_xpath(".//following-sibling::div").click()
-                break
+    def verify_customer(self, customer_list, customer, log):
+        log.info("{},{}".format("Length of this List:", len(customer_list)))
+        for c in customer_list:
+            if c.text == customer:
+                return True
+            else:
+                return False
 
     def get_Logger(self, logFilePath):
         loggerName = inspect.stack()[1][3]

@@ -33,6 +33,14 @@ def setup(request):
     yield
 
 
+@pytest.fixture(scope="class")
+def login():
+    driver.find_element_by_id("Email").clear()
+    driver.find_element_by_id("Email").send_keys("admin@yourstore.com")
+    driver.find_element_by_id("Password").clear()
+    driver.find_element_by_id("Password").send_keys("admin")
+    driver.find_element_by_css_selector("button[type='submit']").click()
+
 
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
@@ -60,6 +68,3 @@ def pytest_runtest_makereport(item):
 def _capture_screenshot(name):
     file_path = "../Reports/"
     driver.get_screenshot_as_file(file_path + name)
-
-
-
